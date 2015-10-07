@@ -1,14 +1,4 @@
-# <img src="http://i.imgur.com/yy1sACZ.png" width="100px"/> ECMAScript 6 Features 中文版
-
-如词不达意，欢迎提 PR & issue
-
-采用中英混排的方式进行译制，如不解请查看对应原文
-
-**本文档将与原作者的 [文档](https://github.com/lukehoban/es6features) 保持同步更新，欢迎关注**
-
-## Contributors 翻译贡献者
-- [Lenville](https://github.com/lenville)
-- [CloudiDust](https://github.com/CloudiDust)
+#  ECMAScript 6 Features 中文版
 
 ## Introduction
 ## Introduction 简介
