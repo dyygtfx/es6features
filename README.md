@@ -10,6 +10,7 @@ See the [ES6 standard](http://www.ecma-international.org/ecma-262/6.0/) for full
 若希望阅读 ECMAScript 6 语言的完整规范，请参见[ES6标准草案](https://people.mozilla.org/~jorendorff/es6-draft.html)。
 
 ES6 includes the following new features:
+
 ES6 包含了以下这些新特性：
 
 - [Arrows 箭头函数](#arrows-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)
