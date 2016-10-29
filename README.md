@@ -67,6 +67,7 @@ var bob = {
   }
 }
 ```
+更多资料：[MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ### Classes 类
 ES6 classes are a simple sugar over the prototype-based OO pattern. Having a single convenient declarative form makes class patterns easier to use, and encourages interoperability. Classes support prototype-based inheritance, super calls, instance and static methods and constructors.
@@ -98,6 +99,7 @@ class SkinnedMesh extends THREE.Mesh {
   }
 }
 ```
+更多资料：[MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
 
 ### Enhanced Object Literals 增强的Object字面量
 Object literals are extended to support setting the prototype at construction, shorthand for foo: foo assignments, defining methods, making super calls, and computing property names with expressions. Together, these also bring object literals and class declarations closer together, and let object-based design benefit from some of the same conveniences.
@@ -121,6 +123,7 @@ var obj = {
     [ 'prop_' + (() => 42)() ]: 42
 };
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals)
 
 ### Template Strings 模板字符串
 Template strings provide syntactic sugar for constructing strings. This is similar to string interpolation features in Perl, Python and more. Optionally, a tag can be added to allow the string construction to be customized, avoiding injection attacks or constructing higher level data structures from string contents.
@@ -192,6 +195,7 @@ a === undefined;
 var [a = 1] = [];
 a === 1;
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 ### Default + Rest + Spread  默认参数+不定参数+参数展开
 Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
@@ -222,6 +226,7 @@ function f(x, y, z) {
 // Pass each elem of array as argument
 f(...[1,2,3]) == 6
 ```
+更多资料：[MDN Default_parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) [MDN rest_parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) [MDN Spread_operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 ### Let + Const 操作符
 Block-scoped binding constructs.  `let` is the new `var`.  `const` is single-assignment.  Static restrictions prevent use before assignment.
@@ -244,6 +249,7 @@ function f() {
   }
 }
 ```
+更多资料： [MDN let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) [MDN const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 ### Iterators + For..Of 迭代器 + For..of 循环
 Iterator objects enable custom iteration like CLR IEnumerable or Java Iterable.  Generalize `for..in` to custom iterator-based iteration with `for..of`.  Don’t require realizing an array, enabling lazy design patterns like LINQ.
@@ -285,6 +291,8 @@ interface Iterable {
   [Symbol.iterator](): Iterator
 }
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
 
 ### Generators 生成器
 Generators simplify iterator-authoring using `function*` and `yield`.  A function declared as function* returns a Generator instance.  Generators are subtypes of iterators which include additional  `next` and `throw`.  These enable values to flow back into the generator, so `yield` is an expression form which returns a value (or throws).
@@ -324,6 +332,8 @@ interface Generator extends Iterator {
     throw(exception: any);
 }
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+
 
 ### Unicode 统一码
 Non-breaking additions to support full Unicode, including new Unicode literal form in strings and new RegExp `u` mode to handle code points, as well as new APIs to process strings at the 21bit code points level.  These additions support building global apps in JavaScript.
@@ -358,6 +368,7 @@ for(var c of "𠮷") {
   console.log(c);
 }
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
 
 ### Modules 模块
 Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model – no code executes until requested modules are available and processed.
@@ -662,6 +673,7 @@ var p = timeout(1000).then(() => {
     return Promise.all([timeout(100), timeout(200)]);
 })
 ```
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ### Reflect API 反射API
 Full reflection API exposing the runtime-level meta-operations on objects.  This is effectively the inverse of the Proxy API, and allows making calls corresponding to the same meta-operations as the proxy traps.  Especially useful for implementing proxies.
@@ -671,7 +683,7 @@ Full reflection API exposing the runtime-level meta-operations on objects.  This
 ```JavaScript
 // No sample yet
 ```
-
+更多资料：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
 ### Tail Calls 尾调用
 Calls in tail-position are guaranteed to not grow the stack unboundedly.  Makes recursive algorithms safe in the face of unbounded inputs.
 
@@ -691,4 +703,3 @@ function factorial(n, acc = 1) {
 factorial(100000)
 ```
 
-编程语言进化到现阶段沉淀了许多成熟方案，例如接口，duck-typed，映射等等，还有许多不明觉厉的概念，每个语言都争相支持这些语言设计的新方案，所以 ES6 的一部分特性看起来很像 Go
